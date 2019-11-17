@@ -26,9 +26,7 @@ if (config.server.update) {
         requesterConfig = JSON.parse(requesterData)
 
         if (config.server.version < requesterConfig.server.version) {
-            logger.warn(`[SERVER] A new update was found!`)
-            logger.warn(`[SERVER] Download -> https://github.com/GeniusXD/free-agario-fb-bots`)
-        } else {
+            
             logger.good(`[SERVER] No updates found!`)
         }
     })
